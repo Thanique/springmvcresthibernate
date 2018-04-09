@@ -17,23 +17,21 @@ public class UserServiceImpl implements UserService {
 		this.userDao = userDao;
 	}
 
-	@Override
+
 	public List<User> getListUser() {
 		return userDao.getListUser();
 	}
 
-	@Override
+
 	public void saveOrUpdate(User user) {
 		System.out.println("SERVICE : " + user);
 		userDao.saveOrUpdate(user);
 	}
 
-	@Override
 	public void deleteUser(int id) {
 		userDao.deleteUser(id);
 	}
 
-	@Override
 	public User findUserById(int id) {
 		return userDao.findUserById(id);
 	}

@@ -20,7 +20,7 @@ public class UserController {
 
 	@RequestMapping(value="/user", method=RequestMethod.GET, consumes=MediaType.APPLICATION_JSON_VALUE)
 	public List<User> getListUser()	{
-		System.out.println("TEST1");
+		System.out.println("TEST2");
 		
 		return (List<User>) userService.getListUser();
 	}
